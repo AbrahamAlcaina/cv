@@ -1,0 +1,132 @@
+<!-- Header -->
+<header id="home">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="pull-right">
+                    <button class="btn btn-default" ng-model="language" btn-radio="'es'" ng-click="changeLanguage('es')" translate="BUTTON_TEXT_ES" ng-hide="$translate.use() == 'es'"></button>
+                    <button class="btn btn-default" ng-model="language" btn-radio="'en'" ng-click="changeLanguage('en')" translate="BUTTON_TEXT_EN" ng-hide="$translate.use() == 'en'"></button>
+                </div>
+                <label class="toggle">
+                    <input type="checkbox" name="asdf" value="asdf">
+                </label>
+
+                <img class="img-responsive img-circle" src="/assets/images/me.jpg" alt="" height="470" width="470">
+                <div class="intro-text">
+                    <span class="name">{{'MAIN_AAA'| translate}}</span>
+                    <hr class="star-light">
+                    <span class="skills">{{'MAIN_SKILLS'| translate}}</span>
+                </div>
+                <button class="btn btn-default" scroll-to="aboutme">{{'MAIN_MORE_ABOUT_ME'| translate}}</button>
+                <button class="btn btn-default" scroll-to="contacttome">{{'MAIN_CONTACT_WITH_ME'| translate}}</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<section>
+    <div class="container">
+        <div class="container">
+            <div class="col-lg-12 text-center">
+                <h2 id="aboutme">{{'ABOUT_ME' | translate }}</h2>
+                <hr class="star-light">
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <img src="/assets/images/nature.jpg" class="img-circle pull-right" height="300" width="300">{{'MAIN_LOREM' | translate }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="col-lg-12 text-center">
+            <h2 id="whatido">{{ 'WHAT_I_DO' | translate }}</h2>
+            <hr class="star-light">
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <img src="/assets/images/technics.jpg" class="img-circle pull-right" height="300" width="300">{{'MAIN_LOREM' | translate }}
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="col-lg-12 text-center">
+            <h2 id="mywork">{{'MY_WORK' | translate}}</h2>
+            <hr class="star-light">
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <img src="/assets/images/business.jpg" class="img-circle pull-right" height="300" width="300">{{'MAIN_LOREM' | translate }}
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="col-lg-12 text-center">
+            <h2 id="contacttome" >{{ 'MAIN_CONTACT_WITH_ME' | translate }}</h2>
+            <hr class="star-light">
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <img src="/assets/images/city.jpg" class="img-circle pull-right" height="300" width="300">{{'MAIN_LOREM' | translate }}
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="text-center">
+    <div class="footer-above">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col col-md-4">
+                    <h3>Location</h3>
+                    <p>3481 Melrose Place
+                        <br>Beverly Hills, CA 90210</p>
+                </div>
+                <div class="footer-col col-md-4">
+                    <h3>Around the Web</h3>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col col-md-4">
+                    <h3>About Freelancer</h3>
+                    <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-below">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    Copyright &copy; Your Website 2014
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

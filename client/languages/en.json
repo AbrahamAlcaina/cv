@@ -1,0 +1,14 @@
+{
+    "NAV_HOME": "Home",
+    "MAIN_AAA": "Hello I'm Abraham Alcaina",
+    "MAIN_SKILLS": "Solution Architect - Developer - CQRS/DDD enthusiastic",
+    "MAIN_MORE_ABOUT_ME": "More about me",
+    "MAIN_CONTACT_WITH_ME": "Contact me",
+    "MAIN_LOREM": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
+    "ABOUT_ME": "About me",
+    "WHAT_I_DO": "What I do",
+    "MY_WORK": "My work",
+
+    "BUTTON_TEXT_EN": "inglés",
+    "BUTTON_TEXT_ES": "español"    
+}
