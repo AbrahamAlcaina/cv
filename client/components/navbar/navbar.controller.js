@@ -3,23 +3,23 @@
 angular.module('cvApp')
     .controller('NavbarCtrl', function($scope, $location, Auth) {
         $scope.menu = [{
-            'title': 'Home',
+            'title': 'HOME',
             'link': '#home',
             'id': 'home'
         }, {
-            'title': 'About me',
+            'title': 'ABOUT_ME',
             'link': '#aboutme',
             'id': 'aboutme'
         }, {
-            'title': 'What I do',
+            'title': 'WHAT_I_DO',
             'link': '#whatido',
             'id': 'whatido'
         }, {
-            'title': 'My work',
+            'title': 'MY_WORK',
             'link': '#mywork',
             'id': 'mywork'
         }, {
-            'title': 'Contact',
+            'title': 'CONTACT',
             'link': '#contacttome',
             'id': 'contacttome'
         }];

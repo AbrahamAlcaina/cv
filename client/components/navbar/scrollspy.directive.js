@@ -1,7 +1,6 @@
 'use strict';
 
 angular.module('cvApp')
-
 .directive('scrollTo', ['$window',
     function($window) {
         return {
@@ -26,7 +25,6 @@ angular.module('cvApp')
         };
     }
 ])
-
 .directive('scrollSpy', ['$window', '$timeout', '$rootScope',
     function($window, $timeout, $rootScope) {
         var targets,
