@@ -2,6 +2,7 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 $fa-font-path: "/bower_components/font-awesome/fonts";
 $font: 'Gloria Hallelujah', cursive;
 
+@import 'animate.css-scss/animate.scss';
 @import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
 @import 'font-awesome/scss/font-awesome';
 @import 'Bootflat/bootflat/scss/bootflat.scss';

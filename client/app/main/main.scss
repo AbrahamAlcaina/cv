@@ -1,4 +1,6 @@
 header {
+    @include transition(all, 1s);
+
     font-family: $font;
     text-align: center;
     background: $mint-dark;
@@ -9,10 +11,12 @@ header {
         height: 780px;
     }
     img {
+        
         display: block;
-        margin: 0 auto 20px;
+        margin: 0 auto 20px;        
     }
     .intro-text {
+        @include transition(all, 1s);        
         .name {
             display: block;
             text-transform: uppercase;
@@ -23,14 +27,39 @@ header {
             font-size: 1.25em;
             font-weight: 300;
         }
+        &.ng-hide-remove, &.ng-hide-add {
+            @include transition(all, 1s);
+            display:block!important;            
+            @include bounceInLeft();
+        }
+        &.ng-hide-remove-active, &.ng-hide-add-active{
+            @include transition(all, 1s);
+            display:block!important;            
+            opacity:1;
+        }
     }
 }
+
 body {
     font-family: $font;
+    #masterView {
+        @include transition(all, 1s);
+        .aboutme {
+            .projects{
+                color: $lightgray-dark;
+                background: $darkgray-dark;
+                .container {
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                 }
+            }
+        }
+    }
 }
+
 footer {
     font-family: $font;
-    color: #fff;
+    color: $lightgray-light;
     h3 {
         margin-bottom: 30px;
     }
@@ -46,6 +75,7 @@ footer {
         background-color: #233140;
     }
 }
+
 #nav.affix {
     position: fixed;
     top: 0;

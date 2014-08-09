@@ -4,6 +4,7 @@ angular.module('cvApp', [
     'ngCookies',
     'ngResource',
     'ngSanitize',
+    'ngAnimate',
     'ui.router',
     'ui.bootstrap',
     'btford.socket-io',
