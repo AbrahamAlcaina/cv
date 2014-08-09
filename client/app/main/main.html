@@ -7,18 +7,16 @@
                     <button class="btn btn-default" ng-model="language" btn-radio="'es'" ng-click="changeLanguage('es')" translate="BUTTON_TEXT_ES" ng-hide="$translate.use() == 'es'"></button>
                     <button class="btn btn-default" ng-model="language" btn-radio="'en'" ng-click="changeLanguage('en')" translate="BUTTON_TEXT_EN" ng-hide="$translate.use() == 'en'"></button>
                 </div>
-                <label class="toggle">
-                    <input type="checkbox" name="asdf" value="asdf">
-                </label>
-
                 <img class="img-responsive img-circle" src="/assets/images/me.jpg" alt="" height="470" width="470">
-                <div class="intro-text">
+                <div class="intro-text" ng-show="showName">
                     <span class="name">{{'MAIN_AAA'| translate}}</span>
                     <hr class="star-light">
                     <span class="skills">{{'MAIN_SKILLS'| translate}}</span>
+                    <div>
+                        <button class="btn btn-default" scroll-to="aboutme">{{'MAIN_MORE_ABOUT_ME'| translate}}</button>
+                        <button class="btn btn-default" scroll-to="contacttome">{{'MAIN_CONTACT_WITH_ME'| translate}}</button>
+                    </div>
                 </div>
-                <button class="btn btn-default" scroll-to="aboutme">{{'MAIN_MORE_ABOUT_ME'| translate}}</button>
-                <button class="btn btn-default" scroll-to="contacttome">{{'MAIN_CONTACT_WITH_ME'| translate}}</button>
             </div>
         </div>
     </div>
@@ -26,17 +24,61 @@
 
 <div ng-include="'components/navbar/navbar.html'"></div>
 
-<section>
-    <div class="container">
+<section class="aboutme">
+    <div class="row">
         <div class="container">
             <div class="col-lg-12 text-center">
                 <h2 id="aboutme">{{'ABOUT_ME' | translate }}</h2>
                 <hr class="star-light">
             </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <img src="/assets/images/nature.jpg" class="img-circle pull-right" height="300" width="300">{{'MAIN_LOREM' | translate }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="container">
+            <div class="col-lg-12">
+                <img src="/assets/images/nature.jpg" class="img-circle pull-right" height="300" width="300">{{'MAIN_LOREM' | translate }}>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="container">
+            <div class="col-lg-6">
+                <h3>{{'ABOUT_ME_SKILLS'|translate}}</h3>
+                <div>
+                    <h4 class="heading-progress">Web Design
+                        <span class="pull-right">88%</span>
+                    </h4>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 88%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="88" role="progressbar">
+                        </div>
+                    </div>
+                    <h4 class="heading-progress">Web Development
+                        <span class="pull-right">78%</span>
+                    </h4>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 78%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="78" role="progressbar">
+                        </div>
+                    </div>
+                    <h4 class="heading-progress">Marketing
+                        <span class="pull-right">82%</span>
+                    </h4>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 82%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="82" role="progressbar">
+                            82%
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div class="col-lg-6">
+                <h3>{{'ABOUT_ME_LAST_TWEET'|translate}}</h3>
+            </div>
+        </div>
+    </div>
+    <div class="row projects">
+        <div class="container">
+            <div class="col-lg-12">
+                <h3>{{'ABOUT_ME_DO_YOU_HAVE_PROJECTS'|translate}}</h3>
+                <button class="btn btn-default" scroll-to="contacttome">{{'ABOUT_ME_LETS_TALK'| translate}}</button>
             </div>
         </div>
     </div>
@@ -73,7 +115,7 @@
 <section>
     <div class="container">
         <div class="col-lg-12 text-center">
-            <h2 id="contacttome" >{{ 'MAIN_CONTACT_WITH_ME' | translate }}</h2>
+            <h2 id="contacttome">{{ 'MAIN_CONTACT_WITH_ME' | translate }}</h2>
             <hr class="star-light">
         </div>
         <div class="row">
@@ -88,34 +130,27 @@
     <div class="footer-above">
         <div class="container">
             <div class="row">
-                <div class="footer-col col-md-4">
-                    <h3>Location</h3>
-                    <p>3481 Melrose Place
-                        <br>Beverly Hills, CA 90210</p>
+                <div class="footer-col col-md-6">
+                    <h3>{{ 'FOOTER_LOCATION' | translate }}</h3>
+                    <p>{{ 'FOOTER_STREET' | translate }}
+                        <br>{{'FOOTER_CITY' | translate }}</p>
                 </div>
-                <div class="footer-col col-md-4">
-                    <h3>Around the Web</h3>
+                <div class="footer-col col-md-6">
+                    <h3>{{ 'FOOTER_AROUND' | translate }}</h3>
                     <ul class="list-inline">
                         <li>
-                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            <a target="_blank" href="//plus.google.com/+AbrahamAlcaina" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
                         </li>
                         <li>
-                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            <a target="_blank" href="//twitter.com/AbrahamAlcaina" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
                         </li>
                         <li>
-                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            <a target="_blank" href="//www.linkedin.com/profile/view?id=63784245&trk=spm_pic" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
                         </li>
                         <li>
-                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                            <a target="_blank" href="//github.com/AbrahamAlcaina" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
                         </li>
                     </ul>
-                </div>
-                <div class="footer-col col-md-4">
-                    <h3>About Freelancer</h3>
-                    <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
                 </div>
             </div>
         </div>
@@ -124,7 +159,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    Copyright &copy; Your Website 2014
+                    Copyright &copy; Abraham Alcaina I/O =) 2014
                 </div>
             </div>
         </div>
