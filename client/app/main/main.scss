@@ -1,6 +1,5 @@
 header {
     @include transition(all, 1s);
-
     font-family: $font;
     text-align: center;
     background: $mint-dark;
@@ -11,12 +10,11 @@ header {
         height: 780px;
     }
     img {
-        
         display: block;
-        margin: 0 auto 20px;        
+        margin: 0 auto 20px;
     }
     .intro-text {
-        @include transition(all, 1s);        
+        @include transition(all, 1s);
         .name {
             display: block;
             text-transform: uppercase;
@@ -29,34 +27,85 @@ header {
         }
         &.ng-hide-remove, &.ng-hide-add {
             @include transition(all, 1s);
-            display:block!important;            
+            display: block!important;
             @include bounceInLeft();
         }
-        &.ng-hide-remove-active, &.ng-hide-add-active{
+        &.ng-hide-remove-active, &.ng-hide-add-active {
             @include transition(all, 1s);
-            display:block!important;            
-            opacity:1;
+            display: block!important;
+            opacity: 1;
         }
     }
 }
-
 body {
     font-family: $font;
     #masterView {
         @include transition(all, 1s);
         .aboutme {
-            .projects{
+            .projects {
                 color: $lightgray-dark;
-                background: $darkgray-dark;
+                background: #000;
                 .container {
-                    padding-top: 20px;
-                    padding-bottom: 20px;
-                 }
+                    padding-top: 80px;
+                    padding-bottom: 80px;
+                    width: 100%;
+                }
+            }
+            .heading-progress {
+                color: $mint-light;
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+            .progress {
+                font-size: 14px;
+            }
+            .progress-bar {
+                line-height: 10px;
+                background: $mint-dark;
+            }
+            .quote-text {
+                background-color: $lightgray-light;
+                border-left: none;
+                color: $darkgray-dark;
+                font-size: 16px;
+                font-style: italic;
+                line-height: 1.6;
+                margin-top: 30px;
+                padding: 26px;
+                position: relative;
+                @include border-bottom-radius (5px);
+                @include box-shadow(0 3px $mint-light);
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 24px;
+
+                    border-top: 30px solid  $mint-light;
+                    border-top-color:  $lightgray-light;
+                    border-left: 30px solid transparent;
+                    border-right: 30px solid transparent;
+                }
+                &:before{
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 20px;
+
+                    border-top: 34px solid  $mint-light;
+                    border-top-color:  $mint-light;
+                    border-left: 34px solid transparent;
+                    border-right: 34px solid transparent;
+                }
+            }
+            .tweet {
+                margin-top: 40px;
+                margin-left: 34px;
+                margin-bottom: 20px;
             }
         }
     }
 }
-
 footer {
     font-family: $font;
     color: $lightgray-light;
@@ -75,7 +124,6 @@ footer {
         background-color: #233140;
     }
 }
-
 #nav.affix {
     position: fixed;
     top: 0;

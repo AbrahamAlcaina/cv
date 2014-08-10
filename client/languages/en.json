@@ -6,15 +6,19 @@
     "MAIN_LOREM": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
     
     "FOOTER_LOCATION": "Location",
-    "FOOTER_STREET": "Saragossa 76",
     "FOOTER_CITY": "Badalona, Barcelona 08912",
     "FOOTER_AROUND" : "Around the Web",
 
-
     "ABOUT_ME_LAST_TWEET" : "Latest tweet",
-    "ABOUT_ME_SKILLS" : "Skills",    
+    "ABOUT_ME_SKILLS" : "My skills",    
     "ABOUT_ME_DO_YOU_HAVE_PROJECTS" : "Do you have interesting projects?",
-    "ABOUT_ME_LETS_TALK": "Let's talk", 
+    "ABOUT_ME_LETS_TALK": "Let's talk",
+
+    "WEB_DESIGN" : "Web design", 
+    "WEB_DEVELOPMENT" : "Web development", 
+    "SOFTWARE_ENGINERING" : "Software enginering", 
+    "BACKED_DEVELOPMENT" : "Backend development", 
+    "TEAM_MANAGEMENT": "Team management", 
 
     "HOME" : "Home",
     "ABOUT_ME": "About me",
