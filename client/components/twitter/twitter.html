@@ -1,0 +1,18 @@
+<div ng-controller="TwitterCtrl">
+    <h3>{{'ABOUT_ME_LAST_TWEET'|translate}}</h3>
+    <blockquote class="quote-text">
+        <p>{{lastTweet.text}}</p>
+        <img ng-src="{{lastTweet.image}}" >
+    </blockquote>
+    <div class="media tweet">
+        <a class="pull-left" href="//twitter.com/AbrahamAlcaina" target="_blank">
+            <img class="img-responsive img-circle" src="/assets/images/me.jpg" alt="" height="40" width="40">
+        </a>
+        <div class="media-body">
+            <h5 class="media-heading">Abraham Alcaina</h5>
+            <a class="pull-left" href="//twitter.com/AbrahamAlcaina" target="_blank">
+                @AbrahamAlcaina
+            </a>
+        </div>
+    </div>
+</div>
