@@ -9,3 +9,5 @@ server/config/environment/development.js
 server/config/environment/index.js
 server/config/environment/production.js
 server/config/environment/test.js
+server/config
+server/config/

@@ -27,8 +27,7 @@ header {
         }
         &.ng-hide-remove, &.ng-hide-add {
             @include transition(all, 1s);
-            display: block!important;
-            @include bounceInLeft();
+            display: block!important;            
         }
         &.ng-hide-remove-active, &.ng-hide-add-active {
             @include transition(all, 1s);

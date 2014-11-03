@@ -1,16 +1,15 @@
 'use strict';
 
 angular.module('cvApp', [
-    'ngCookies',
-    'ngResource',
-    'ngSanitize',
-    'ngAnimate',
-    'ui.router',
-    'ui.bootstrap',
-    'btford.socket-io',
-    'pascalprecht.translate',
-    'ngScrollSpy'
-])
+        'ngCookies',
+        'ngResource',
+        'ngSanitize',
+        'ngAnimate',
+        'ui.router',
+        'ui.bootstrap',
+        'btford.socket-io',
+        'pascalprecht.translate'
+    ])
     .config(function($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
         $urlRouterProvider.otherwise('/');
         $stateProvider
@@ -55,10 +54,10 @@ angular.module('cvApp', [
         };
     })
     .run(function($rootScope, $location, Auth) {
-    // Redirect to login if route requires auth and you're not logged in
-    $rootScope.$on('$stateChangeStart', function(event, next) {
-        if (next.authenticate && !Auth.isLoggedIn()) {
-            $location.path('/login');
-        }
+        // Redirect to login if route requires auth and you're not logged in
+        $rootScope.$on('$stateChangeStart', function(event, next) {
+            if (next.authenticate && !Auth.isLoggedIn()) {
+                $location.path('/login');
+            }
+        });
     });
-});
