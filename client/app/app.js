@@ -8,7 +8,8 @@ angular.module('cvApp', [
         'ui.router',
         'ui.bootstrap',
         'btford.socket-io',
-        'pascalprecht.translate'
+        'pascalprecht.translate', 
+        'ngScrollSpy'
     ])
     .config(function($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
         $urlRouterProvider.otherwise('/');

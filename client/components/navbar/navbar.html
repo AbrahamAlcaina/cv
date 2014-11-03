@@ -1,5 +1,5 @@
-<div id="nav" affix="top" class="navbar navbar-default navbar-static-top" ng-controller="NavbarCtrl">
-    <div class="container">
+<div id="nav" affix="top" class="navbar navbar-default navbar-static-top">
+    <div class="container" >
         <div class="navbar-header">
             <button class="navbar-toggle" type="button" ng-click="isCollapsed = !isCollapsed">
                 <span class="sr-only">Toggle navigation</span>
@@ -12,7 +12,7 @@
         <div collapse="isCollapsed" class="navbar-collapse collapse" id="navbar-main">
             <ul class="nav navbar-nav" id="menu">
                 <li ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">
-                    <a href="{{item.link}}" scroll-to="{{item.if}}" onclick="return false;" target="_self">{{item.title | translate}}</a>
+                    <a href="{{item.link}}"   onclick="return false;" target="_self">{{item.title | translate}}</a>
                 </li>
             </ul>
         </div>
