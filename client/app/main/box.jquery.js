@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    fullScreenContainer();    
+    fullScreenContainer();
     setTimeout(function() {
         fullScreenContainer();
     }, 100);
@@ -9,15 +9,12 @@ $(document).ready(function() {
 });
 
 function fullScreenContainer() {
-
     var screenWidth = $(window).width() + "px";
-
     if ($(window).height() > 500) {
         var screenHeight = $(window).height() + "px";
     } else {
         var screenHeight = "500px";
     }
-
 
     $("#home").css({
         width: screenWidth,
